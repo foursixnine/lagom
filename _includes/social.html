@@ -72,6 +72,12 @@ Follow me:
   </a>
   {% endif %}
 
+  {% if site.data.theme.social.strava %}
+  <a title="{{ site.data.theme.name }} on Strava" href="https://www.strava.com/athletes/{{ site.data.theme.social.strava }}">
+    <i class="fab fa-strava"></i>
+  </a>
+  {% endif %}
+
   {% if site.data.theme.show_atom_feed %}
   <a title="Atom feed" id="atom" href="/atom.xml">
     <i class="fas fa-rss-square"></i>
