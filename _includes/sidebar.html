@@ -1,18 +1,20 @@
 <nav>
-  <h1>Hi.</h1>
+  <h1>Hola!</h1>
   <a href="/">
     {% if site.data.theme.social.gravatar %}
-    <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
+    <img src="https://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
     {% else %}
-    <img src="/logo.png" id="logo" alt="Blog logo"/>
+    <img src="/logo.png" id="logo" alt="foursixnine's avatar"/>
     {% endif %}
   </a>
-  <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
+  <h2>I'm <a href="/">{{ site.data.theme.name }}</a> aka <a href="http://twitter.com/foursixnine/">@foursixnine</a>.</h2>
   <div id="bio">
-    <p>A brief bio or something witty.</p>
-    <p>
-      Edit me in <code>_includes/sidebar.html</code>
-    </p>
+    <p>I do free and opensource software. I eat. I travel. I take pictures. I
+    bike. I love linguistics. I do <a
+    href="https://instagram.com/explore/tags/travelosaurio/">#travelosaurio</a> and
+    use <a
+    href="https://instagram.com/explore/tags/travelingtrex/">#travelingtrex</a>.</p>
+    <p>I'm from Caracas, Venezuela</p>
   </div>
   <div id="social">
     {% include social.html %}
