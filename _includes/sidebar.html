@@ -9,12 +9,12 @@
   </a>
   <h2>I'm <a href="/">{{ site.data.theme.name }}</a> aka <a href="http://twitter.com/foursixnine/">@foursixnine</a>.</h2>
   <div id="bio">
-    <p>I do free and opensource software. I eat. I travel. I take pictures. I
-    bike. I love linguistics. I do <a
-    href="https://instagram.com/explore/tags/travelosaurio/">#travelosaurio</a> and
-    use <a
-    href="https://instagram.com/explore/tags/travelingtrex/">#travelingtrex</a>.</p>
-    <p>I'm from Caracas, Venezuela</p>
+    {% if site.data.theme.description %}
+        {{ site.data.theme.description }}
+    {% endif %}
+    {% if site.data.theme.origin %}
+        {{ site.data.theme.origin }}
+    {% endif %}
   </div>
   <div id="social">
     {% include social.html %}
