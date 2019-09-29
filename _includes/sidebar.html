@@ -10,7 +10,7 @@
   <h2>I'm <a href="/">{{ site.data.theme.name }}</a> aka <a href="http://twitter.com/foursixnine/">@foursixnine</a>.</h2>
   <div id="bio">
     {% if site.data.theme.description %}
-        {{ site.data.theme.description }}
+        {{ site.data.theme.description | replace: '!BLOG_EMAIL',site.data.theme.email }}
     {% endif %}
     {% if site.data.theme.origin %}
         {{ site.data.theme.origin }}

@@ -6,8 +6,6 @@ Lagom, a [Jekyll][j] blog theme with just the right amount of style.
 
 Extracted lovingly from [http://mdswanson.com][mds] for your enjoyment!
 
-
-
 * Responsive, based on [Skeleton][skeleton]
 * [Font Awesome][font-awesome] for icons
 * Open Sans from [Google web fonts][gfonts]
@@ -34,6 +32,8 @@ You should have a server up and running locally at <http://localhost:4000>.
 Next you'll want to change a few things. Most of them can be changed directly in
 [theme.yml][config]. That's where you can add your social links, change the accent
 color, stuff like that.
+
+- Using `!BLOG_EMAIL` in site.data.theme.description, will replace contents with site.data.theme.email
 
 There's a few other places that you'll want to change, too:
 
